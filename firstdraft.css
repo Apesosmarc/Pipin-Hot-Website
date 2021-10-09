@@ -1,0 +1,104 @@
+:root {
+  --light-pink: #fdf3e9;
+  --light-yellow: #fff67b;
+  --orange: #ef694a;
+  --dark-red: #945555;
+  --dark-yellow: #f4a242;
+  --darkest-red: "#492821";
+}
+
+header {
+  width: 100%;
+}
+.navbar-border {
+  border-left: 20px solid var(--dark-yellow);
+  border-bottom: 20px solid var(--dark-yellow);
+  border-right: 15px solid var(--dark-yellow);
+  border-top: 10px solid var(--dark-yellow);
+  position: relative;
+  z-index: 10;
+}
+
+.nav-border {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: -1;
+  border-left: 15px solid var(--dark-red);
+  border-bottom: 10px solid var(--dark-red);
+  border-top: 5px solid var(--dark-red);
+  border-right: 10px solid var(--dark-red);
+  top: 0px;
+  left: 0px;
+  right: 0px;
+  bottom: 0px;
+}
+
+/* .navbar-border:before {
+  content: "";
+  display: block;
+  position: absolute;
+  z-index: 0;
+  border-left: 5px solid #e6c852;
+  border-bottom: 5px solid #e6c852;
+  top: 0px;
+  left: -15px;
+  right: 0px;
+  bottom: -15px;
+} */
+.orange {
+  color: var(--orange);
+}
+.light-pink {
+  color: #fdf3e9;
+}
+
+.bg-light-pink {
+  background: var(--light-pink);
+}
+
+.bg-orange {
+  background: var(--orange);
+}
+
+.dtborder {
+  position: relative;
+  height: 200px;
+  width: 300px;
+  background:
+  /*First border*/ linear-gradient(
+        var(--dark-red),
+        var(--dark-red)
+      )
+      0 0/40px 100%,
+    linear-gradient(var(--dark-red), var(--dark-red)) 100% 0/40px 100%,
+    linear-gradient(var(--orange), var(--orange)) 50px 0/40px 100%,
+    linear-gradient(var(--orange), var(--orange)) calc(100% - 50px) / 40px 100%,
+    linear-gradient(var(--dark-yellow), var(--dark-yellow)) 40px 0/10px 100%,
+    linear-gradient(var(--dark-yellow), var(--dark-yellow)) calc(100% - 40px) /
+      10px 100%;
+  /*And so on ...*/
+  background-repeat: no-repeat;
+}
+
+.logo-text {
+  font-family: "Bungee Shade", cursive;
+}
+
+.location {
+  font-family: "Chango", cursive;
+  font-size: 0.85rem;
+  color: var(--orange);
+}
+
+a {
+  transition: transform 0.2s;
+}
+
+a:hover {
+  transform: scale(1.2);
+}
+
+form {
+  border: 1px solid black;
+}
