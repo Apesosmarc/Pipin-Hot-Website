@@ -1,3 +1,32 @@
+.splash {
+  position: fixed;
+  z-index: 100;
+  opacity: 0;
+  transition: all 3s ease-out;
+}
+.splash.display-none {
+  opacity: 0;
+  z-index: -5000;
+}
+@keyframes fadeOut {
+  0% {
+    opacity: 1;
+  }
+  50% {
+    opacity: 1;
+  }
+  75% {
+    opacity: 0.65;
+  }
+  100% {
+    opacity: 0;
+  }
+}
+
+.fade-out {
+  animation-name: fadeOut;
+}
+
 :root {
   --light-pink: #fdf3e9;
   --light-yellow: #fff67b;
@@ -29,7 +58,7 @@ h3 {
 }
 
 .fire img {
-  height: 125px;
+  height: 55px;
 }
 
 .animated {
@@ -66,7 +95,7 @@ h3 {
 
 .fire {
   margin-top: 3em;
-  width: 125px;
+  width: 55px;
   align-self: center;
   position: relative;
 }

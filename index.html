@@ -17,7 +17,7 @@
   <body>
     <div class="container mx-auto">
       <header
-        class="px-12 py-6 flex justify-between content-center items-center"
+        class="px-0 py-6 flex justify-between content-center items-center"
       >
         <div class="logo-container">
           <img
@@ -27,27 +27,37 @@
             alt=""
           />
         </div>
-        <nav class="text-3xl flex justify-between w-5/12 font-bold">
+        <nav class="text-3xl flex justify-between lg:w-5/12 font-bold">
           <a href="">MERCH</a><a href="">TOURS</a><a href="">BOOKING</a>
         </nav>
       </header>
     </div>
-    <main class="bg mx-auto flex justify-end">
+    <main
+      class="
+        bg
+        mx-auto
+        flex
+        md:justify-center
+        lg:justify-end lg:items-center
+        items-start
+      "
+    >
       <div class="inlay"></div>
       <div
         class="
           col
-          w-5/12
-          p-24
+          lg:w-5/12
+          md:w-8/12 md:mx-auto
+          sm:w-full
+          p-6
           lg:mr-24
           flex flex-col
-          justify-center
           items-center
         "
       >
-        <div class="copy-container">
-          <h1 class="text-4xl">Cool Title Here</h1>
-          <p class="mt-4">
+        <div class="copy-container mt-16 mb-16 md:mt-0 md:mb-0">
+          <h1 class="text-4xl mb-12 md:mb-0">Cool Title Here</h1>
+          <p class="mt-4 leading-7">
             Lorem ipsum dolor, sit amet
             <span>consectetur adipisicing</span> elit. Dicta, voluptates
             repellendus aspernatur corrupti est magnam magni vitae,
@@ -58,7 +68,18 @@
           </p>
         </div>
 
-        <nav class="links mx-auto flex justify-evenly lg:my-8 w-full">
+        <nav
+          class="
+            links
+            mx-auto
+            md:mx-0
+            flex
+            justify-evenly
+            lg:my-8
+            w-8/12
+            sm:mb-16
+          "
+        >
           <a href=""
             ><img
               class="lg:w-14 lg:h-14"
@@ -93,22 +114,51 @@
           class="
             contact
             rounded-lg
-            w-3/4
-            h-1/2
+            lg:w-2/4
+            h-4/6
             mx-auto
-            flex
-            justify-evenly
-            text-center
+            flex flex-col
+            justify-center
             shadow-2xl
+            p-8
+            text-white
           "
         >
-          <div class="copy-container text-white text-2xl">
-            <h1 class="mb-2">Contact Us</h1>
-            <p class="text-base">Reach out for booking information!</p>
+          <div class="copy-container text-center p-4 mb-2">
+            <h1 class="text-2xl">Let's Talk!</h1>
+            <p>bookin info n shit</p>
           </div>
-          <form class="flex flex-col justify-evenly" action="">
-            <input />
-            <input />
+
+          <form class="flex flex-col items-start mx-auto w-full" action="">
+            <input aria-label="Name" placeholder="Name" type="text" id="name" />
+
+            <input
+              aria-label="email"
+              placeholder="Email"
+              type="text"
+              id="email"
+            />
+
+            <textarea
+              placeholder="Your message"
+              aria-label="message"
+              class="text-black p-2"
+              name="message"
+              id="messageText"
+              cols="30"
+              rows="10"
+            ></textarea>
+            <input
+              class="
+                text-black
+                bg-purple-400
+                self-center
+                btn
+                zoom-out
+                submit-button
+              "
+              type="submit"
+            />
           </form>
         </div>
       </section>
