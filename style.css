@@ -180,11 +180,9 @@ textarea {
 
 /* ANIMATIONS */
 
-/* .loaded header::after {
+.loaded header::after {
   animation: scaleIn 1.3s ease-in 0.2s forwards;
 }
-
-
 
 header {
   position: relative;
@@ -201,8 +199,6 @@ header::after {
   z-index: 99999;
   transform: scaleX(0);
 }
-
-
 
 header > * {
   opacity: 0;
@@ -225,9 +221,9 @@ main button {
 
 .loaded main {
   animation: fadeIn ease-in 0.9s forwards;
-} */
+}
 
-/* @keyframes scaleIn {
+@keyframes scaleIn {
   100% {
     transform: scaleX(1);
   }
@@ -250,4 +246,4 @@ main button {
   100% {
     transform: translateY(0);
   }
-} */
+}
