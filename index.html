@@ -41,14 +41,17 @@
           class="
             text-3xl
             flex
-            justify-between
+            justify-evenly
             md:w-7/12
             lg:w-5/12
             font-bold
             desktop-menu
           "
         >
-          <a href="">MERCH</a><a href="">TOURS</a><a href="">BOOKING</a>
+          <a
+            href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1"
+            >MUSIC</a
+          ><a href="#contact">BOOKING</a>
         </nav>
         <label class="hamburger-icon" for="hamburger">&#9776;</label>
       </header>
@@ -81,15 +84,22 @@
         "
       >
         <div class="copy-container mt-8 mb-8 md:mt-0 md:mb-0">
-          <h1 class="text-4xl mb-12 md:mb-0">Cool Title Here</h1>
-          <p class="mt-4 leading-7">
-            Lorem ipsum dolor, sit amet
-            <span>consectetur adipisicing</span> elit. Dicta, voluptates
-            repellendus aspernatur corrupti est magnam magni vitae,
-            <span>doloribus quae perspiciatis</span>, ullam assumenda
-            exercitationem? Nemo assumenda ipsum nulla id vero laborum rerum
-            molestias omnis temporibus, aliquam officiis, autem labore itaque.
-            Ex.
+          <h1 class="text-4xl mb-12 md:mb-0">Fresh Out The Frying Pan...</h1>
+          <p class="my-4 leading-7">
+            Pipin' Hot is an exciting new jam band fresh out of
+            <span>Fort Collins, CO</span> that lays down potent sonic sound
+            scapes full of transitions, turnarounds and crescendos that pull
+            from a boundless array of styles & influence.
+          </p>
+
+          <p>
+            Groove-centric and always high energy, Pipin' Hot's open-ended style
+            of music makes every set
+            <span class="italic">titillatingly orginal</span> for audiences both
+            digital and in-person. As strong contributors to the local scene,
+            Pipin' Hot is building a network of friends, fans & family in
+            Northern Colorado and beyond. Contact us for booking information or
+            just to say hi!
           </p>
         </div>
 
@@ -124,70 +134,99 @@
               src="img/social-icons/instagram.png"
               alt="link to pipin hot instagram profile"
           /></a>
-          <a href=""
-            ><img
-              class="lg:w-14 lg:h-14"
-              src="img/social-icons/bandcamp-logotype.png"
-              alt="link to pipin hot bandcamp profile"
-          /></a>
         </nav>
         <button class="btn zoom-out zoom-out--orange">Contact</button>
       </div>
     </main>
-    <div class="container mx-auto">
-      <section class="mt-4">
-        <div
-          class="
-            contact
-            rounded-lg
-            lg:w-2/4
-            h-4/6
-            mx-auto
-            flex flex-col
-            justify-center
-            shadow-2xl
-            p-8
-            text-white
-          "
-        >
-          <div class="copy-container text-center p-4 mb-2">
-            <h1 class="text-2xl">Let's Talk!</h1>
-            <p>bookin info n shit</p>
-          </div>
 
-          <form class="flex flex-col items-start mx-auto w-full" action="">
-            <input aria-label="Name" placeholder="Name" type="text" id="name" />
-
-            <input
-              aria-label="email"
-              placeholder="Email"
-              type="text"
-              id="email"
-            />
-
-            <textarea
-              placeholder="Your message"
-              aria-label="message"
-              class="text-black p-2"
-              name="message"
-              id="messageText"
-              cols="30"
-              rows="10"
-            ></textarea>
-            <input
-              class="
-                text-black
-                bg-purple-400
-                self-center
-                btn
-                zoom-out
-                submit-button
-              "
-              type="submit"
-            />
-          </form>
-        </div>
-      </section>
+    <div
+      class="
+        container
+        photo-grid
+        <!--
+        flex flex-col
+        items-center
+        -->
+        md:items-start md:grid
+        grid-cols-2 grid-row-3
+        w-full
+        mx-auto
+      "
+      id="contact"
+    >
+      <div class="band-photo guitarist col-start-1 col-span-1">
+        <img src="/img/guitarist.jpg" a;t="lead guitar playing under lights" />
+      </div>
+      <div class="col-start-1 row-start-2">
+        <img src="/img/stageleft.jpg" alt="guitarists jamming stageleft" />
+      </div>
+      <div
+        class="band-photo poster col-span-1 row-start-1 row-span-2 col-start-2"
+      >
+        <img
+          class="h-full"
+          src="/img/band-poster.jpg"
+          alt="Pipin hot gulchfest promo poster"
+        />
+      </div>
     </div>
+    <div class="container mx-auto">
+      <iframe
+        class="w-full"
+        height="700px"
+        src="https://www.youtube.com/embed/WllQmtqL-vo?start=1944"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+    </div>
+
+    <section class="mt-4">
+      <div
+        class="
+          contact
+          rounded-lg
+          lg:w-full
+          mx-auto
+          flex flex-col
+          items-center
+          shadow-2xl
+          p-8
+          text-white
+        "
+      >
+        <div class="copy-container text-center p-4 mb-4">
+          <h1 class="text-4xl font-bold mb-2">Booking Info</h1>
+          <p class="font-bold">
+            Scheduling info, inquiries & more. Don't be afraid to reach out!
+          </p>
+        </div>
+
+        <!-- <div class="band-photo drummer">
+            <img src="/img/drummer.jpg" />
+          </div> -->
+
+        <form class="flex flex-col lg:w-1/4 md:w-1/2 w-full" action="">
+          <input aria-label="Name" placeholder="Name" type="text" id="name" />
+
+          <input
+            aria-label="email"
+            placeholder="Email"
+            type="text"
+            id="email"
+          />
+
+          <textarea
+            placeholder="Your message"
+            aria-label="message"
+            class="text-black p-2"
+            name="message"
+            id="messageText"
+          ></textarea>
+          <input class="text-black btn zoom-out submit-button" type="submit" />
+        </form>
+      </div>
+    </section>
   </body>
 </html>
