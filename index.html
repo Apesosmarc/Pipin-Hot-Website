@@ -18,17 +18,7 @@
   </head>
   <body>
     <div class="container mx-auto">
-      <header
-        class="
-          py-6
-          px-2
-          md:px-0
-          flex
-          justify-between
-          content-center
-          items-center
-        "
-      >
+      <header class="py-6 px-2 md:px-0 flex justify-between items-center">
         <div class="logo-container">
           <img
             height="250px"
@@ -42,8 +32,9 @@
             text-3xl
             flex
             justify-evenly
-            md:w-7/12
-            lg:w-5/12
+            align-content-end
+            md:w-11/12
+            lg:w-7/12
             font-bold
             desktop-menu
           "
@@ -51,12 +42,24 @@
           <a
             href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1"
             >MUSIC</a
-          ><a href="#contact">BOOKING</a>
+          ><a href="#contact">BOOKING</a
+          ><a
+            target="_blank"
+            href="https://lyriccinema.com/?fbclid=IwAR26-5sm0uYZ53FmpLXljpcNGb7G4uwaCYUb7iLzRTwkXJaQc-_KQsXJzIw#/"
+            >SUPPORT LOCAL</a
+          >
         </nav>
         <label class="hamburger-icon" for="hamburger">&#9776;</label>
       </header>
       <nav class="hamburger-menu display-none">
-        <a href="">MERCH</a><a href="">TOURS</a><a href="">BOOKING</a>
+        <a
+          href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1"
+          >MUSIC</a
+        ><a
+          target="_blank"
+          href="https://lyriccinema.com/?fbclid=IwAR26-5sm0uYZ53FmpLXljpcNGb7G4uwaCYUb7iLzRTwkXJaQc-_KQsXJzIw#/"
+          >SUPPORT LOCAL</a
+        ><a href="#contact">BOOKING</a>
       </nav>
     </div>
     <main
@@ -84,7 +87,7 @@
         "
       >
         <div class="copy-container mt-8 mb-8 md:mt-0 md:mb-0">
-          <h1 class="text-4xl mb-12 md:mb-0">Fresh Out The Frying Pan...</h1>
+          <h1 class="text-4xl mb-12 md:mb-0">Hot Off The Grill...</h1>
           <p class="my-4 leading-7">
             Pipin' Hot is an exciting new jam band fresh out of
             <span>Fort Collins, CO</span> that lays down potent sonic sound
@@ -139,37 +142,40 @@
       </div>
     </main>
 
-    <div
-      class="
-        container
-        photo-grid
-        <!--
-        flex flex-col
-        items-center
-        -->
-        md:items-start md:grid
-        grid-cols-2 grid-row-3
-        w-full
-        mx-auto
-      "
-      id="contact"
-    >
-      <div class="band-photo guitarist col-start-1 col-span-1">
-        <img src="/img/guitarist.jpg" a;t="lead guitar playing under lights" />
+    <div class="container photo-grid w-full mx-auto">
+      <img
+        class="band-photo guitarist"
+        src="/img/guitarist.jpg"
+        alt="lead guitar playing under lights"
+      />
+
+      <img
+        class="drummer"
+        src="./img/drummer.jpg"
+        alt="drummer vibing hard under lights"
+      />
+
+      <img
+        class="band-photo poster"
+        src="/img/brandon-singing.jpg"
+        alt="Pipin hot gulchfest promo poster"
+      />
+
+      <div class="band-photo frontstage">
+        <img src="./img/front-stage.jpg" alt="" />
       </div>
-      <div class="col-start-1 row-start-2">
-        <img src="/img/stageleft.jpg" alt="guitarists jamming stageleft" />
-      </div>
-      <div
-        class="band-photo poster col-span-1 row-start-1 row-span-2 col-start-2"
-      >
-        <img
-          class="h-full"
-          src="/img/band-poster.jpg"
-          alt="Pipin hot gulchfest promo poster"
-        />
-      </div>
+      <img
+        class="band-photo stageleft"
+        src="/img/stageleft.jpg"
+        alt="guitarists jamming stageleft"
+      />
+      <img
+        class="brandon"
+        alt="funky lights and wooks danncing"
+        src="./img/brandon.jpg"
+      />
     </div>
+
     <div class="container mx-auto">
       <iframe
         class="w-full"
@@ -182,7 +188,7 @@
       ></iframe>
     </div>
 
-    <section class="mt-4">
+    <section class="mt-4" id="contact">
       <div
         class="
           contact

@@ -52,11 +52,11 @@ body {
 /* BUTTONS + SOCIAL LINKS*/
 
 a {
-  transition: transform 0.2s;
+  transition: all 0.2s;
 }
 
 a:hover {
-  transform: scale(1.2);
+  opacity: 50%;
 }
 
 .btn {
@@ -96,14 +96,59 @@ a:hover {
 
 /* SMOL GALLERY */
 
-.band-photo {
+.photo-grid {
+  display: grid;
+  /* GRID RESPONDS BETTER FOR SOME REASON COMMENTING THIS OUT? */
+  /* grid-template-rows: repeat(3, minmax(341px, 427px)); */
+  grid-auto-columns: auto;
   border-top: 5px solid var(--orange);
   border-bottom: 5px solid var(--orange);
 }
 
-.band-photo:nth-child(2) {
-  border: none;
+.guitarist {
+  grid-column: 1 / span 1;
 }
+
+.stageleft {
+  grid-column: 1 / span 1;
+  grid-row: 1;
+}
+
+.poster {
+  grid-row: 1 / span 1;
+  grid-column: 2 / span 1;
+  object-fit: contain;
+}
+
+.frontstage {
+  grid-column: 2 / span 1;
+}
+
+.brandon {
+  grid-row: 3 / span 1;
+  grid-column: 1 / span 1;
+}
+
+.drummer {
+  grid-row: 3 / span 1;
+  grid-column: 2 / span 1;
+}
+
+@media (max-width: 500px) {
+  .photo-grid {
+    display: flex;
+    flex-direction: column;
+  }
+}
+
+/* .band-photo {
+  border-top: 5px solid var(--orange);
+  border-bottom: 5px solid var(--orange);
+} */
+
+/* .band-photo:nth-child(2) {
+  border: none;
+} */
 
 /* CONTACT FORM */
 
