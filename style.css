@@ -101,8 +101,8 @@ a:hover {
   /* GRID RESPONDS BETTER FOR SOME REASON COMMENTING THIS OUT? */
   /* grid-template-rows: repeat(3, minmax(341px, 427px)); */
   grid-auto-columns: auto;
-  border-top: 5px solid var(--orange);
-  border-bottom: 5px solid var(--orange);
+  gap: 1em;
+  margin-bottom: 1em;
 }
 
 .guitarist {
@@ -138,6 +138,7 @@ a:hover {
   .photo-grid {
     display: flex;
     flex-direction: column;
+    gap: 0;
   }
 }
 
