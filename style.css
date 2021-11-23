@@ -134,6 +134,10 @@ a:hover {
   grid-column: 2 / span 1;
 }
 
+.video {
+  border: 3px solid black;
+}
+
 @media (max-width: 500px) {
   .photo-grid {
     display: flex;
