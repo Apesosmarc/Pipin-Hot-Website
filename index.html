@@ -119,19 +119,20 @@
             mb-8
           "
         >
-          <a href=""
+          <a
+            href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR3ESsAfRbepxBAKqhO2P8Fzbxf8vzU1GGHBX194-I2RCtVHl10mHHM09uM"
             ><img
               class="lg:w-14 lg:h-14"
               src="img/social-icons/spotify.png"
               alt="link to pipin hot spotify profile"
           /></a>
-          <a href=""
+          <a href="https://www.facebook.com/search/top?q=pipin"
             ><img
               class="lg:w-14 lg:h-14"
               src="img/social-icons/facebook.png"
               alt="link to pipin hot Facebook profile"
           /></a>
-          <a href=""
+          <a href="https://www.instagram.com/pipin.hot.music/"
             ><img
               class="lg:w-14 lg:h-14"
               src="img/social-icons/instagram.png"
@@ -213,16 +214,22 @@
             <img src="/img/drummer.jpg" />
           </div> -->
 
-        <form class="flex flex-col lg:w-1/4 md:w-1/2 w-full" action="">
+        <form
+          class="flex flex-col lg:w-1/4 md:w-1/2 w-full"
+          name="contact"
+          data-netlify="true"
+        >
+          <label hidden>Name</label>
           <input aria-label="Name" placeholder="Name" type="text" id="name" />
 
+          <label hidden>Email</label>
           <input
             aria-label="email"
             placeholder="Email"
             type="text"
             id="email"
           />
-
+          <label hidden>Your message</label>
           <textarea
             placeholder="Your message"
             aria-label="message"
