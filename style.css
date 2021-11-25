@@ -9,6 +9,7 @@
 
 html {
   scroll-behavior: smooth;
+  background-color: var(--light-pink);
 }
 
 /* TYPOGRAPHY */
@@ -21,7 +22,7 @@ body {
   margin: 0;
 }
 
-.bg {
+.loaded .bg {
   background-image: url("img/heroDT.png");
   background-repeat: no-repeat;
   background-size: cover;
@@ -273,6 +274,7 @@ header > * {
 .loaded header > * {
   animation: fadeIn 1s ease-in 0.7s forwards;
 }
+
 main .copy-container *,
 main nav *,
 main button {
