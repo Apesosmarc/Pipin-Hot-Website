@@ -1,51 +1,35 @@
 <!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Pipin Hot Music</title>
-    <link rel="stylesheet" href="style.css" />
-    <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/" />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="img/favicons/favicon-32x32.png"
-    />
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="16x16"
-      href="img/favicons/favicon-16x16.png"
-    />
 
-    <!-- SPECIFIES IMAGE IN FB LINK -->
-    <meta property="og:image" content="./img/Skillet/1x/Asset 1.png" />
-    <link rel="manifest" href="/site.webmanifest" />
-    <link
-      href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
-    <script src="./splash.js" defer></script>
-    <script src="./hamburger.js" defer></script>
-    <style>
-      @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Chango&display=swap");
-    </style>
-  </head>
-  <body class="display-none">
-    <div class="container mx-auto">
-      <header class="py-6 px-2 md:px-0 flex justify-between items-center">
-        <div class="logo-container">
-          <img
-            height="250px"
-            width="250px"
-            src="./img/Primary Wordmark/PipinHot_wordmark_primary.png"
-            alt=""
-          />
-        </div>
-        <nav
-          class="
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pipin Hot Music</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="apple-touch-icon" sizes="180x180" href="img/favicons/" />
+  <link rel="icon" type="image/png" sizes="32x32" href="img/favicons/favicon-32x32.png" />
+  <link rel="icon" type="image/png" sizes="16x16" href="img/favicons/favicon-16x16.png" />
+
+  <!-- SPECIFIES IMAGE IN FB LINK -->
+  <meta property="og:image" content="./img/Skillet/1x/Asset 1.png" />
+  <link rel="manifest" href="/site.webmanifest" />
+  <link href="https://unpkg.com/tailwindcss@^2/dist/tailwind.min.css" rel="stylesheet" />
+  <script src="./splash.js" defer></script>
+  <script src="./hamburger.js" defer></script>
+  <style>
+    @import url("https://fonts.googleapis.com/css2?family=Bungee+Shade&family=Chango&display=swap");
+  </style>
+</head>
+
+<body class="display-none">
+  <div class="container mx-auto">
+    <header class="py-6 px-2 md:px-0 flex justify-between items-center homepage">
+      <div class="logo-container">
+        <a href="/" class='img.logo'><img height="250px" width="250px"
+            src="./img/Primary Wordmark/PipinHot_wordmark_primary.png" alt="" /></a>
+      </div>
+      <nav class="
             text-3xl
             flex
             justify-evenly
@@ -54,33 +38,20 @@
             lg:w-7/12
             font-bold
             desktop-menu
-          "
-        >
-          <a
-            href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1"
-            >MUSIC</a
-          ><a href="#contact">BOOKING</a
-          ><a
-
-            href="./shows.html"
-            >SHOWS</a
-          >
-        </nav>
-        <label class="hamburger-icon shows-hamburger-icon" for="hamburger">&#9776;</label>
-      </header>
-      <nav class="hamburger-menu shows-hamburger-menu display-none">
+          ">
         <a
-          href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1"
-          >MUSIC</a
-        ><a
-
-          href="./shows.html"
-          >SHOWS</a
-        ><a href="#contact">BOOKING</a>
+          href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1">MUSIC</a><a
+          href="#contact">BOOKING</a><a href="./shows.html">SHOWS</a>
       </nav>
-    </div>
-    <main
-      class="
+      <label class="hamburger-icon shows-hamburger-icon" for="hamburger">&#9776;</label>
+    </header>
+    <nav class="hamburger-menu shows-hamburger-menu display-none">
+      <a
+        href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR0LBcfTbRrlwCk4ECEFPFGXVmjv_xi8bqiEQ54Blhv4FmRKl6iC6ynSLew&nd=1">MUSIC</a><a
+        href="./shows.html">SHOWS</a><a href="#contact">BOOKING</a>
+    </nav>
+  </div>
+  <main class="
         bg
         mx-auto
         flex
@@ -88,11 +59,9 @@
         lg:justify-end
         md:items-center
         items-start
-      "
-    >
-      <div class="inlay"></div>
-      <div
-        class="
+      ">
+    <div class="inlay"></div>
+    <div class="
           col
           lg:w-5/12
           md:w-8/12 md:mx-auto
@@ -101,30 +70,28 @@
           lg:mr-24
           flex flex-col
           items-center
-        "
-      >
-        <div class="copy-container mt-8 mb-8 md:mt-0 md:mb-0">
-          <h1 class="text-4xl mb-12 md:mb-0">Hot Off The Grill...</h1>
-          <p class="my-4 leading-7">
-            Pipin' Hot is an exciting new jam band fresh out of
-            <span>Fort Collins, CO</span> that lays down potent sonic
-            soundscapes full of transitions, turnarounds and crescendos that
-            pull from a wide array of styles & influence.
-          </p>
+        ">
+      <div class="copy-container mt-8 mb-8 md:mt-0 md:mb-0">
+        <h1 class="text-4xl mb-12 md:mb-0">Hot Off The Grill...</h1>
+        <p class="my-4 leading-7">
+          Pipin' Hot is an exciting new jam band fresh out of
+          <span>Fort Collins, CO</span> that lays down potent sonic
+          soundscapes full of transitions, turnarounds and crescendos that
+          pull from a wide array of styles & influence.
+        </p>
 
-          <p>
-            Groove-centric and always high energy, Pipin' Hot's open-ended style
-            of music makes every set
-            <span class="italic">titillatingly orginal</span> for audiences both
-            digital and in-person. As strong contributors to the local scene,
-            Pipin' Hot is building a network of friends, fans & family in
-            Northern Colorado and beyond. Contact us for booking information or
-            just to say hi!
-          </p>
-        </div>
+        <p>
+          Groove-centric and always high energy, Pipin' Hot's open-ended style
+          of music makes every set
+          <span class="italic">titillatingly original</span> for audiences both
+          digital and in-person. As strong contributors to the local scene,
+          Pipin' Hot is building a network of friends, fans & family in
+          Northern Colorado and beyond. Contact us for booking information or
+          just to say hi!
+        </p>
+      </div>
 
-        <nav
-          class="
+      <nav class="
             links
             mx-auto
             md:mx-0
@@ -134,84 +101,44 @@
             w-10/12
             md:w-8/12
             mb-8
-          "
-        >
-          <a
-            href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR3ESsAfRbepxBAKqhO2P8Fzbxf8vzU1GGHBX194-I2RCtVHl10mHHM09uM"
-            target="_blank"
-            ><img
-              class="lg:w-14 lg:h-14"
-              src="img/social-icons/spotify.png"
-              alt="link to pipin hot spotify profile"
-          /></a>
-          <a href="https://www.facebook.com/search/top?q=pipin" target="_blank"
-            ><img
-              class="lg:w-14 lg:h-14"
-              src="img/social-icons/facebook.png"
-              alt="link to pipin hot Facebook profile"
-          /></a>
-          <a href="https://www.instagram.com/pipin.hot.music/" target="_blank"
-            ><img
-              class="lg:w-14 lg:h-14"
-              src="img/social-icons/instagram.png"
-              alt="link to pipin hot instagram profile"
-          /></a>
-        </nav>
-        <a href="#contact">
-          <button class="btn zoom-out zoom-out--orange">Contact</button>
-        </a>
-      </div>
-    </main>
-
-    <div class="container photo-grid w-full mx-auto">
-      <img
-        class="band-photo guitarist"
-        src="/img/guitarist.jpg"
-        alt="lead guitar playing under lights"
-      />
-
-      <img
-        class="drummer"
-        src="./img/drummer.jpg"
-        alt="drummer vibing hard under lights"
-      />
-
-      <img
-        class="band-photo poster"
-        src="/img/brandon-singing.jpg"
-        alt="Pipin hot gulchfest promo poster"
-      />
-
-      <div class="band-photo frontstage">
-        <img src="./img/front-stage.jpg" alt="" />
-      </div>
-      <img
-        class="band-photo stageleft"
-        src="/img/stageleft.jpg"
-        alt="guitarists jamming stageleft"
-      />
-      <img
-        class="brandon"
-        alt="funky lights and wooks danncing"
-        src="./img/brandon.jpg"
-      />
+          ">
+        <a href="https://open.spotify.com/artist/1wJqYDH9LsyTL8HQstd6CD?si=c4s19_FJSW-rKf9g3l2NDQ&fbclid=IwAR3ESsAfRbepxBAKqhO2P8Fzbxf8vzU1GGHBX194-I2RCtVHl10mHHM09uM"
+          target="_blank"><img class="lg:w-14 lg:h-14" src="img/social-icons/spotify.png"
+            alt="link to pipin hot spotify profile" /></a>
+        <a href="https://www.facebook.com/search/top?q=pipin" target="_blank"><img class="lg:w-14 lg:h-14"
+            src="img/social-icons/facebook.png" alt="link to pipin hot Facebook profile" /></a>
+        <a href="https://www.instagram.com/pipin.hot.music/" target="_blank"><img class="lg:w-14 lg:h-14"
+            src="img/social-icons/instagram.png" alt="link to pipin hot instagram profile" /></a>
+      </nav>
+      <a href="#contact">
+        <button class="btn zoom-out zoom-out--orange">Contact</button>
+      </a>
     </div>
+  </main>
 
-    <div class="container mx-auto">
-      <iframe
-        class="w-full video"
-        height="700px"
-        src="https://www.youtube.com/embed/WllQmtqL-vo?start=1944"
-        title="YouTube video player"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-        allowfullscreen
-      ></iframe>
+  <div class="container photo-grid w-full mx-auto paddingtop">
+    <img class="band-photo guitarist" src="/img/guitarist.jpg" alt="lead guitar playing under lights" />
+
+    <img class="drummer" src="./img/drummer.jpg" alt="drummer vibing hard under lights" />
+
+    <img class="band-photo poster" src="/img/brandon-singing.jpg" alt="Pipin hot gulchfest promo poster" />
+
+    <div class="band-photo frontstage">
+      <img src="./img/front-stage.jpg" alt="" />
     </div>
+    <img class="band-photo stageleft" src="/img/stageleft.jpg" alt="guitarists jamming stageleft" />
+    <img class="brandon" alt="funky lights and wooks danncing" src="./img/brandon.jpg" />
+  </div>
 
-    <section class="mt-4" id="contact">
-      <div
-        class="
+  <div class="container mx-auto">
+    <iframe class="w-full video" height="700px" src="https://www.youtube.com/embed/WllQmtqL-vo?start=1944"
+      title="YouTube video player" frameborder="0"
+      allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+      allowfullscreen></iframe>
+  </div>
+
+  <section class="mt-4" id="contact">
+    <div class="
           contact
           rounded-lg
           lg:w-full
@@ -221,48 +148,34 @@
           shadow-2xl
           p-8
           text-white
-        "
-      >
-        <div class="copy-container text-center p-4 mb-4">
-          <h1 class="text-4xl font-bold mb-2">Booking Info</h1>
-          <p class="font-bold">
-            Scheduling info, inquiries & more. Don't be afraid to reach out!
-            <br>
-            We were unable to respond to some messages sent before 6/10/22 -- Please be sure to include your email, name and a quick message
-          </p>
-        </div>
+        ">
+      <div class="copy-container text-center p-4 mb-4">
+        <h1 class="text-4xl font-bold mb-2">Booking Info</h1>
+        <p class="font-bold">
+          Scheduling info, inquiries & more. Don't be afraid to reach out!
+          <br>
+          We were unable to respond to some messages sent before 6/10/22 -- Please be sure to include your email, name
+          and a quick message
+        </p>
+      </div>
 
-        <!-- <div class="band-photo drummer">
+      <!-- <div class="band-photo drummer">
             <img src="/img/drummer.jpg" />
           </div> -->
 
-        <form
-          class="flex flex-col lg:w-1/4 md:w-1/2 w-full"
-          name="contact"
-          data-netlify="true"
-        >
-          <label hidden>Name</label>
-          <input type="text" name="name" aria-label="Name" placeholder="Name" type="text" id="name" />
+      <form class="flex flex-col lg:w-1/4 md:w-1/2 w-full" name="contact" data-netlify="true">
+        <label hidden>Name</label>
+        <input type="text" name="name" aria-label="Name" placeholder="Name" type="text" id="name" />
 
-          <label hidden>Email</label>
-          <input
-            name="email" 
-            aria-label="email"
-            placeholder="Email"
-            type="text"
-            id="email"
-          />
-          <label hidden>Your message</label>
-          <textarea
-            placeholder="Your message"
-            aria-label="message"
-            class="text-black p-2"
-            name="message"
-            id="messageText"
-          ></textarea>
-          <input class="text-black btn zoom-out submit-button" type="submit" />
-        </form>
-      </div>
-    </section>
-  </body>
+        <label hidden>Email</label>
+        <input name="email" aria-label="email" placeholder="Email" type="text" id="email" />
+        <label hidden>Your message</label>
+        <textarea placeholder="Your message" aria-label="message" class="text-black p-2" name="message"
+          id="messageText"></textarea>
+        <input class="text-black btn zoom-out submit-button" type="submit" />
+      </form>
+    </div>
+  </section>
+</body>
+
 </html>
